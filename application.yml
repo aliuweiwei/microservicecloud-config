@@ -1,0 +1,21 @@
+﻿spring: 
+  profiles: 
+    active: 
+    - dev
+
+---
+
+spring: 
+  profiles: dev    #开发模式
+  application: 
+    name: microservicecloud-config-liuweiwei-dev
+
+
+---
+spring: 
+  profiles: test    #测试模式
+  application: 
+    name: microservicecloud-config-liuweiwei-test
+#必须是UTF-8格式
+
+    
