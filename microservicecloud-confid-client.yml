@@ -1,0 +1,30 @@
+﻿spring: 
+  profiles: 
+    active: 
+    - dev
+
+---
+server: 
+  port: 8201
+spring: 
+  profiles: dev    #开发模式
+  application: 
+    name: microservicecloud-config-client
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://liuweiwei-dev.com:7001/eureka
+
+---
+
+server: 
+  port: 8202
+spring: 
+  profiles: test    
+  application: 
+    name: microservicecloud-config-client
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://liuweiwei-test.com:7001/eureka
+   
