@@ -41,7 +41,6 @@ info:
   build.version: $project.version$
 --- 
 
----
 server:
   port: 8001
 spring:
@@ -78,4 +77,3 @@ info:
   company.name: www.liuweiwei.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
---- 
